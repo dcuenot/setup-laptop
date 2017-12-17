@@ -18,7 +18,7 @@ choco install intellijidea-ultimate -y
 choco install docker -y
 choco install visualstudiocode -y
 choco install adobereader -y
-
+choco install slack -y
 ```
 
 
