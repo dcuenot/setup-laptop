@@ -116,6 +116,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
 #forward ssh key inside ci-vnet
 if [ -z "$(pgrep ssh-agent)" ]; then
   rm -rf /tmp/ssh-*
@@ -139,3 +150,7 @@ alias es_qa='ssh -f -N -L 2080:ife-es-qa-master:9100 -L 2081:ife-es-qa-master:92
 
 export DOCKER_HOST=tcp://0.0.0.0:2375
 sudo mount --bind /mnt/c /c
+
+
+#Git clean
+alias git_cls='git fetch -p && for branch in `git branch -vv | grep '': gone]'' | awk ''{print $1}''`; do git branch -D $branch; done'
