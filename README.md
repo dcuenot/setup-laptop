@@ -15,7 +15,7 @@ choco install keepass-plugin-keeagent -y
 choco install jdk8 -y
 choco install filezilla -y
 choco install intellijidea-ultimate -y
-choco install docker -y
+choco install docker-for-windows
 #choco install visualstudiocode -y
 choco install adobereader -y
 choco install slack -y
