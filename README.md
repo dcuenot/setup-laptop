@@ -19,6 +19,7 @@ choco install docker-for-windows
 #choco install visualstudiocode -y
 choco install adobereader -y
 choco install slack -y
+choco install microsoft-teams -y
 ```
 
 
