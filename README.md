@@ -20,6 +20,7 @@ choco install docker-for-windows
 choco install adobereader -y
 choco install slack -y
 choco install microsoft-teams -y
+choco install notepadplusplus.install -y
 ```
 
 
