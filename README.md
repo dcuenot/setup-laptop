@@ -28,3 +28,10 @@ Choco update
 ```
 choco upgrade all
 ```
+
+
+Activation of the WSL susbsystem
+```
+Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
