@@ -13,7 +13,7 @@ choco install keepass-keepasshttp -y
 choco install keepass-plugin-keeagent -y
 #choco install sourcetree -y
 choco install jdk8 -y
-choco install filezilla -y
+#choco install filezilla -y
 choco install intellijidea-ultimate -y
 choco install docker-for-windows
 #choco install visualstudiocode -y
@@ -38,3 +38,9 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 #Install WSL
 `lxrun /install`
+
+#Install Ubuntu from the store
+
+#Configure Linux env
+http://jessicadeen.com/tech/microsoft/badass-terminal-fcu-wsl-edition-oh-my-zsh-powerlevel9k-tmux-and-more/
+
